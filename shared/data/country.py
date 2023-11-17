@@ -49,3 +49,6 @@ class Country(Data):
     @staticmethod
     def jsonToData(jsonData) -> Country:
         return Country(jsonData["id"], jsonData["code"], jsonData["name"], jsonData["id_helloworld"])
+
+    def __str__(self):
+        return f"Country: idData={self.idData}, code={self.__code}, name={self.__name}, idHelloWorld={self.__idHelloWorld}"
