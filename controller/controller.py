@@ -31,4 +31,4 @@ class Controller(IController):
         self.__model = model
 
     def start(self):
-        self.View.displayMessage(self.Model.getHelloWorld())
+        self.View.displayMessage(self.Model.getHelloWorld("FR"))
