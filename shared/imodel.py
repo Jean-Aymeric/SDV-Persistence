@@ -1,5 +1,7 @@
-from abc import ABC
+from abc import ABC, abstractmethod
 
 
 class IModel(ABC):
-    pass
+    @abstractmethod
+    def getHelloWorld(self, country: str):
+        pass
