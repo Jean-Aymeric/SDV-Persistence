@@ -1,9 +1,9 @@
-from abc import ABCMeta
+from abc import ABC
 
 from shared.data.idata import IData
 
 
-class Data(IData, metaclass=ABCMeta):
+class Data(IData, ABC):
     def __init__(self, __idData: int):
         self.__idData: int = __idData
 

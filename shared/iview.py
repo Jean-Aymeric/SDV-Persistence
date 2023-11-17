@@ -27,3 +27,6 @@ class IView(ABC):
     @abstractmethod
     def displayMessage(self, message: str):
         pass
+
+    def displayDatum(self, datum: []):
+        pass

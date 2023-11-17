@@ -28,3 +28,7 @@ class View(IView):
 
     def displayMessage(self, message: str):
         print(message)
+
+    def displayDatum(self, datum: []):
+        for data in datum:
+            print(data)
